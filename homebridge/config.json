@@ -1,0 +1,23 @@
+{
+	"bridge": {
+		"name": "Homebridge",
+		"username": "CC:22:3D:E3:CE:30",
+		"port": 51826,
+		"pin": "031-45-154"
+	},
+	"accessories": [ 
+		{
+			"accessory": "Http",
+			"name": "My Sonoff Switch",
+			"switchHandling": "realtime",
+			"http_method": "POST",
+			"on_url":      "http://SONOFF_IP_ADDRESS/On",
+			"off_url":     "http://SONOFF_IP_ADDRESS/Off",
+			"status_url":  "http://SONOFF_IP_ADDRESS/Status",
+			"service": "Switch",
+			"sendimmediately": "",
+			"username" : "",
+			"password" : ""					    
+		} 
+	]
+}
