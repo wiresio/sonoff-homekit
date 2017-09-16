@@ -51,6 +51,8 @@ void setup(void) {
   digitalWrite(relay, 0);
   status = "0\n";
   
+  WiFi.mode(WIFI_STA);
+  
   Serial.begin(115200);
   WiFi.begin(ssid, password);
   Serial.println("");
